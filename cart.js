@@ -19,7 +19,7 @@ function addToCart() {
   const selectedSize = document.getElementById("size-el").textContent.trim();
   if (selectedSize === "SIZE") {
     alert("Please select a size before adding to cart.");
-    return;
+  
   } else {
     
     const productName = document.getElementById("product-name").textContent;
