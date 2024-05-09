@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="layout.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <div class="header">
+        <p class="cart" id="cartNumber" onclick="myCart()">My Cart ( 0 )</p>
+        <div class="cart-section" id="cart-section"></div>
+      </div>
+
+      <!-- Image -->
+      <div class="image-wrapper">
+        <img id="product-image" src="" class="classic-tee-img" />
+      </div>
+
+      <!-- Product Details -->
+      <div class="product-details">
+        <h2 id="product-name"></h2>
+        <p class="price" id="product-price"></p>
+        <p class="description" id="product-description"></p>
+        <div class="size">
+          <p id="size-el">SIZE</p>
+          <p class="star">*</p>
+        </div>
+
+        <!-- Buttons -->
+        <div class="size-buttons">
+          <button id="s-btn" onclick="addSmall()">S</button>
+          <button onclick="addMedium()">M</button>
+          <button onclick="addLarge()">L</button>
+        </div>
+
+        <!-- Cart Section-->
+        <button class="cart-btn" onclick="addToCart()">ADD TO CART</button>
+      </div>
+    </div>
+    <script src="cart.js"></script>
+    <script src="api.js"></script>
+  </body>
+</html>
